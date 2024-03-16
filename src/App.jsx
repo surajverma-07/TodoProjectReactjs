@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { TodoProvider } from './context/TodoContext'
+import Todoform from './components/Todoform'
 
 function App() {
   const [todos, setTodos] = useState({})
@@ -36,6 +37,7 @@ function App() {
                     <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
                     <div className="mb-4">
                         {/* Todo form goes here */} 
+                        <Todoform />
                  
                     </div>
                     <div className="flex flex-wrap gap-y-3">
